@@ -35,10 +35,76 @@
 		<section>
 			<h1>Accueil</h1>
 			<article id="S1">
+				This web page aims at briefly summing up few interesting projects and their outcomes.
 			</article>
 			<h1>Data Science - Big Data</h1>
 			<article id="S2">
 				<h2 id="Su1">Image Processing</h2>
+					<p>
+					For most Humans, there is no major issue when it comes to recognize people or objects that surround us in our daily
+life : this ability is deeply embedded in our nature and habits. Indeed, due either to inherent human features that we
+train from an early age - babies know quickly who their parents and relatives are - or to more repetitive learning -
+we have been identifying, classifying/labelling and memorizing objects since our childhood - this process has become
+completely subconscious to us so that we pay little attention to it.
+But what happens when it comes to computers or machines ? They do not have the same background and the same
+resources as we do. Neither have they time to go through the same learning process as we did.
+Nevertheless, face and object recognition is a central issue for industry and our societies nowadays : In our quest for
+automating control process, for quickly identifying more and more people in a minimum amount of time either for
+security or business purposes, the use of machines for those tasks is highly sought because processing the amount of
+information that relates to that task is beyond human capabilities. Hence Computer Face Recognition has become in
+recent years of highest interest for many tangible applications.
+					</p>
+					<p>
+					Many techniques from improved general PCA to more elaborated and recent attempts like Deep Learning have been
+decicated to reach that goal.
+Some of the hereafore mentioned methods are more difficult than others to implement or more sensitive than others to
+loss of data and occlusion.
+In this context, an approach based on Compressed Sensing is studied in that report to evaluate the feasibility of such a
+method in the field of interest and to assess the advantages of accounting for the sparsity of the retrieved solutions when
+it comes to face recognition. This method is relatively easy to understand from a theoretical point of view, to implement
+from a practical point of view, and is promissing from a result standpoint.
+It is based on Sparsity of Representation for Classification - SRC- and is designed in such a way that it should be robust
+to real life conditions such as variations in lighting, change in facial expressions, and occlusion and corruption.
+					</p>
+					<p>
+					2.1 Type of problem & Purpose
+Let us consider rst a digital library consisting of face pictures of dierent individuals. The pictures are sorted out by
+categories based on the people to which the faces belongs. Let us then consider a digital image y.
+The purpose of the method then consists in nding wheteher or not the submitted image is any person’s recorded in
+the data base and if so to which category/people the face described by image y belongs.
+					</p>
+					<p>
+					2.2 Major Assumption
+The major assumption of the framework we work in to implement this face recognition method is that as long as the
+previous image library is extensive enough, there is enough information available in it to express the test image y as a
+linear combination of the training images within the library.
+This last assumption implies that the training library should be designed in such a way that the reference images represent
+configurations various enough so that any image can be decomposed onto that image finite dimension subspace.
+In order to resolve that classification problem, we then use the following modelling.
+					</p>
+					<p>
+					Yale B Database ("CroppedYale") [YA1]
+The first picture database consists of a 39 categories (39 people) comprising between 59 and 64 instances of
+each individual ; each of those 59 to 64 pictures is taken with a specific lighting angle so that the stored face
+is "recorded" in a various set of conditions corresponding as close as possible to the variety of configurations
+that can exist in real life. The shots are close-up shots focused mainly on the face itself : eyes, eyebrows, nose,
+lips, mouth and chin are the features that are considered in that framework. A sample of few photographs
+available in the database as references can be found on figure 1.
+
+					</p>
+					<p>
+					Yalefaces Database [YA2]
+This time, the second database is made of 15 categories (15 people) for each of which 11 pictures are available.
+The purpose of that second database is more general : in that case, the pictures taken are not focused on a
+specific area of the subject’s face but are shot in such a way that the hair and the global demeanour, facial
+expressions and accessories - such as glasses- can be accounted for in the classification process. Tests on that
+second set of images is quite important since it assesses the robustness of the face recognition technique when
+dealing with intrinsic variations of human face expressions and settings : those configurations are those encountered
+on a day-to-day applications.
+Hence, the different variations do not only consist this time of lighting variations but also of expression variations.
+For each person, the following configurations are available :’.glasses’, ’.happy’, ’.leftlight’, ’.noglasses’,
+’.normal’, ’.rightlight’, ’.sad’, ’.sleepy’, ’.surprised’, ’.wink’, and ’.centerlight’.
+					</p>
 				<h2 id="Su2">Facial Recognition & Compressed Sensing</h2>
 				<h2 id="Su3">Network analysis for Marketing Purposes</h2>
 				<h2 id="Su4">Risk Management</h2>
