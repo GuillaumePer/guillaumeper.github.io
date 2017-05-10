@@ -4,11 +4,15 @@
 		<script>
 		</script>
 		<style>
-		body{font-family:Arial;}
+		html{background-color:gray;}
+		body{font-family:Arial;width:90%;margin-left:auto;margin-right:auto;background-color:white;border-radius:15px 15px 15px 15px}
+		.top_men{display:inline-block;border-left:2pt solid gray;padding-left:10pt;padding-right:10pt;}
+		.sub_men{display:block;border-bottom:1pt dashed gray;padding:10pt;}
 		@font-face{font-family: "RTS"; src:url("../Fonts/KGSecondChancesSketch.ttf");}
-		h1{font-family:RT;font-size:1.2em;color:blue}
-		h2{font-family:RT;font-size:1.1em;color:green}
-		p{text-align:justify}
+		section{padding-left:10pt;padding-right:10pt;}
+		section h1{font-family:RT;font-size:1.2em;color:blue}
+		section h2{font-family:RT;font-size:1.1em;color:green}
+		p{text-align:justify;padding-left:10pt;padding-right:10pt;}
 		
 		</style>
 	</head>
@@ -18,22 +22,24 @@
 		</header>
 		<nav>
 			<ul>
-				<li><a href="#S1">Accueil</li>
-				<li><a href="#S2">Data Science & Big Data</li>
+				<li class="top_men"><a href="#S1">Accueil</a></li>
+				<li class="top_men"><a href="#S2">Data Science & Big Data</a>
 					<ul>
-						<li><a href="#Su1">Image Processing</a></li>
-						<li><a href="#Su2">Facial Recognition & Compressed Sensing</a></li>
-						<li><a href="#Su3">Network analysis for Marketing Purposes</a></li>
-						<li><a href="#Su4">Risk Management</a></li>
-						<li><a href="#Su5">Banking & Scoring</a></li>						
-						<li><a href="#Su6">Brent Pricing Modeling</a></li>						
+						<li class="sub_men"><a href="#Su1">Image Processing</a></li>
+						<li class="sub_men"><a href="#Su2">Facial Recognition & Compressed Sensing</a></li>
+						<li class="sub_men"><a href="#Su3">Network analysis for Marketing Purposes</a></li>
+						<li class="sub_men"><a href="#Su4">Risk Management</a></li>
+						<li class="sub_men"><a href="#Su5">Banking & Scoring</a></li>						
+						<li class="sub_men"><a href="#Su6">Brent Pricing Modeling</a></li>						
 					</ul>
-				<li> <a href="#Su7">Data Visualisation</a></li>
-				<li><a href="#S3">Beyond ...</li>
+				</li>
+				<li class="top_men"> <a href="#Su7">Data Visualisation</a></li>
+				<li class="top_men"><a href="#S3">Beyond ...</a>
 					<ul>
-						<li><a href="#Su8">Photography</a></li>
-						<li><a href="#Su9">Paintings</a></li>
+						<li class="sub_men"><a href="#Su8">Photography</a></li>
+						<li class="sub_men"><a href="#Su9">Paintings</a></li>
 					</ul>
+				</li>
 			</ul>
 		</nav>
 		<aside>
@@ -98,6 +104,14 @@
 					<h3>Credit Scoring</h3>
 				<h2 id="Su6">Brent Pricing</h2>
 			</article>
+			<h1>Data Visualisation</h1>
+			<article id="S7">
+				This project involved the combination and cross-checking of multiple databases regarding different official data sources.
+				Its goal was to study the evolution of the food-consumption in France as well as daily habits (sports, fast food-consumption)
+				on the obesity rate and its geographical discrepencies.
+				The result of the project is online at the following link: <a href="https://frenchmalbouffetour.github.io">https://frenchmalbouffetour.github.io</a>
+			</article>
+			
 			<h1>Beyond...</h1>
 			<article id="S3">
 				<h2 id="Su8">Photography</h2>
