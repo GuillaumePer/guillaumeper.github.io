@@ -4,121 +4,189 @@
 		<script>
 		</script>
 		<style>
-		html{background-color:gray;}
-		body{font-family:Arial;width:90%;margin-left:auto;margin-right:auto;background-color:white;border-radius:15px 15px 15px 15px}
-		.top_men{display:inline-block;border-left:2pt solid gray;padding-left:10pt;padding-right:10pt;}
-		.sub_men{display:block;border-bottom:1pt dashed gray;padding:10pt;}
-		@font-face{font-family: "RTS"; src:url("../Fonts/KGSecondChancesSketch.ttf");}
-		section{padding-left:10pt;padding-right:10pt;}
-		section h1{font-family:RT;font-size:1.2em;color:blue}
-		section h2{font-family:RT;font-size:1.1em;color:green}
+		.circle1{position:absolute;top:5pt;left:-40pt;width:40pt;height:40pt;background-color:rgba(130, 200, 130, 0.6);border-radius:20pt;z-index:1;}
+		.circle2{position:absolute;top:20pt;left:-55pt;width:40pt;height:40pt;background-color:rgba(130, 0, 130, 0.6);border-radius:20pt;z-index:1;}		
+		.circle3{position:absolute;top:5pt;left:-70pt;width:40pt;height:40pt;background-color:rgba(0, 200, 130, 0.6);border-radius:20pt;z-index:1;}		
+		.pclear{clear:both;}
+		html{background-color:rgb(250,250,250);}
+		body{
+		font-family:Arial;width:90%;margin-left:auto;margin-right:auto;background-color:white;border-radius:15px 15px 15px 15px;
+		background-color:rgb(240,240,220);box-shadow:10px 10px 35px gray;height:1200pt;
+		}
+		@font-face{font-family: "RTS"; src:url("fonts/KGSecondChancesSketch.ttf");}
+		h1{font-family:RTS;font-size:1.5em;color:green}
+		h2{font-family:RTS;font-size:1.3em;color:gray}
+		h3{font-family:RTS;font-size:1.3em;color:rgb(130, 200, 130)}
 		p{text-align:justify;padding-left:10pt;padding-right:10pt;}
-		
+		.barre{position:absolute; top:10pt;left:15%;width:100%;height:120pt;float:left;}
+		.barre2{position:absolute; top:80pt;width:100%;height:40pt;float:left;background-color:green}
+		.barre h1{position:absolute;top:10pt;font-family:RTS;font-size:1.4em;color:green;text-align:left;padding-left:20pt;}
+		.menu {
+			text-align:center;
+			border-left:1px solid white;
+			padding:10px;
+			font-weight:bold;
+			color:white;
+			font-size:1.1em;
+			background-color:rgba(150,150,150,0);
+			float:left;
+			display:inline-block;
+			color:white;
+			margin-right:5px;
+			margin-top:-7px;
+		}
+		.menu ul{
+			height:0px;
+			position:absolute;	
+			top:28pt;
+			transition:0.1s height;
+		}
+		.menu ul li{
+			visibility:hidden;
+			transition:0.4s height;
+			display:block;
+			font-size:1em;
+		}
+		.menu:hover ul{
+			text-align:left;
+			margin-top:14px;
+			font-size:1.1em;
+			list-style:none;
+			border-radius: 0px 0px 5px 5px;
+			margin-left:-10px;
+			display:block;
+			background-color:rgba(150,150,150,0.8);
+			height:280px;
+		}
+		.menu:hover ul li{
+			margin-left:-40px;
+			padding-right:15px;
+			padding-left:3px;
+			padding-top:10px;
+			padding-bottom:10px;
+			border-top: 1px dotted white;
+			visibility:visible;
+		}
+		.menu ul li:hover{
+			visibility:visible;
+			opacity:0.8;
+		}
+		.menu a{
+			color:white;
+			text-decoration:none;
+		}
+		.menu a:hover{
+			color:rgb(230,230,220);
+		}
+		#Content{
+			position:absolute;
+			top:130pt;
+			width:100%;
+		}		
 		</style>
 	</head>
 
 	<body>
 		<header>
+			<div class="barre">
+				<div class="Circle1"></div>
+				<div class="Circle2"></div>
+				<div class="Circle3"></div>								
+				<h1>Will's Page - Of Big Data, Applied Maths and More...</h1>
+			</div>	
 		</header>
-		<nav>
-			<ul>
-				<li class="top_men"><a href="#S1">Accueil</a></li>
-				<li class="top_men"><a href="#S2">Data Science & Big Data</a>
-					<ul>
-						<li class="sub_men"><a href="#Su1">Image Processing</a></li>
-						<li class="sub_men"><a href="#Su2">Facial Recognition & Compressed Sensing</a></li>
-						<li class="sub_men"><a href="#Su3">Network analysis for Marketing Purposes</a></li>
-						<li class="sub_men"><a href="#Su4">Risk Management</a></li>
-						<li class="sub_men"><a href="#Su5">Banking & Scoring</a></li>						
-						<li class="sub_men"><a href="#Su6">Brent Pricing Modeling</a></li>						
-					</ul>
-				</li>
-				<li class="top_men"> <a href="#Su7">Data Visualisation</a></li>
-				<li class="top_men"><a href="#S3">Beyond ...</a>
-					<ul>
-						<li class="sub_men"><a href="#Su8">Photography</a></li>
-						<li class="sub_men"><a href="#Su9">Paintings</a></li>
-					</ul>
-				</li>
-			</ul>
-		</nav>
-		<aside>
-		</aside>
-		<section>
-			<h1>Accueil</h1>
-			<article id="S1">
+		<nav class="barre2">
+				<ul>
+					<li class="menu"><a href="#S1">Accueil</a></li>
+					<li class="menu"><a href="#S2">Data Science & Big Data</a>
+						<ul>
+							<li ><a href="#Su1">Image Processing</a></li>
+							<li ><a href="#Su2">Facial Recognition & Compressed Sensing</a></li>
+							<li ><a href="#Su3">Network analysis for Marketing Purposes</a></li>
+							<li ><a href="#Su4">Risk Management</a></li>
+							<li ><a href="#Su5">Banking & Scoring</a></li>						
+							<li ><a href="#Su6">Brent Pricing Modeling</a></li>						
+						</ul>
+					</li>
+					<li class="menu"> <a href="#Su7">Data Visualisation</a></li>
+					<li class="menu"><a href="#S3">Beyond ...</a>
+						<ul>
+							<li ><a href="#Su8">Photography</a></li>
+							<li ><a href="#Su9">Paintings</a></li>
+						</ul>
+					</li>
+				</ul>
+		</nav>			
+		<!--<p class="pclear"></p>-->
+		<div id="Content">
+		<h1>Accueil</h1>
+		<section id="S1">
 				This web page aims at briefly summing up few interesting projects and their outcomes.
-			</article>
-			<h1>Data Science - Big Data</h1>
-			<article id="S2">
-				<h2 id="Su1">Image Processing</h2>
+		</section>
+		<h1>Data Science - Big Data</h1>
+		<section id="S2">
+			<h2 id="Su1">Image Processing</h2>
 					
-				<h2 id="Su2">Facial Recognition & Compressed Sensing</h2>
-					<p>
+			<h2 id="Su2">Facial Recognition & Compressed Sensing</h2>
+				<p>
 					For most Humans, there is no major issue when it comes to recognize people or objects that surround us in our daily
-					life : this ability is deeply embedded in our nature and habits. We have been identifying, classifying/labelling and memorizing objects 
-					since our childhood. Hence this process has become almost instinctive to us.</p>
-					<p>But what happens when it comes to computers or machines ? They do not have the same background and the same
-					resources as we do. Neither have they time to go through the same learning process as we did.</p>
-					<p>
-					Nevertheless, face and object recognition is a central issue for industry and our societies nowadays.
-					Hence Computer Face and Object Recognition has become of the highest interest for many tangible applications in recent years.
-					</p>
-					<p>
-					Many techniques from improved general PCA to more elaborated and recent attempts like Deep Learning have been
-					decicated to reach that goal, some of the hereafore mentioned methods more difficult to implement than others or more sensitive to
-					loss of data and occlusion.
-					</p>
-					<p>
-					An approach based on Compressed Sensing, proposed n <a href=""><em>""</em></a>, has thus been implemented and confirmed the feasibility 
+					life. Indeed we have been identifying, classifying/labelling and memorizing objects and faces since our childhood. 
+					But what happens when it comes to computers or machines ? 					
+				</p>
+				<p>
+					Nevertheless, face and object recognition is a central issue for industry and our societies nowadays for security reasons 
+					and for industrial automation. Computer Face and Object Recognition has thus become of the highest interest for many tangible
+					applications in recent years.
+				</p>
+				<p>
+					Some recent attempts related to Deep Learning methods have been successful to reach that goal but at relatively hight costs.
+					Therefore, an approach based on Compressed Sensing, proposed n <a href=""><em>""</em></a>, has thus been implemented and confirmed the feasibility 
 					of such a method which takes advantage of the sparsity of the retrieved solutions. Sparsity of Representation for Classification - SRC- 
 					is designed in such a way that it is robust to real life conditions such as variations in lighting, change in facial expressions, and 
 					face occlusion and data corruption.
-					</p>
-					<p>
+				</p>
+				<p>
 					Tests were run using 2 face databases:
-						<ol>
-							<li>Yale B Database ("CroppedYale") - a collection of 39 categories with up to 64 variations in lighting;</li>
-							<li>Yalefaces Database - a collection of 15 categories with 11 variations (lighting, facial expressions, adds-on (glasses)). </li>
-						</ol>
-					</p>
-					<p>
+					<ol>
+						<li>Yale B Database ("CroppedYale") - a collection of 39 categories with up to 64 variations in lighting;</li>
+						<li>Yalefaces Database - a collection of 15 categories with 11 variations (lighting, facial expressions, adds-on (glasses)). </li>
+					</ol>
+				</p>
+				<p>
 					The success of the method has also been proven for object recognition for object databases such as the one created by the 
 					<a href=""><em>ALOI</em></a> and available at <a href=""><em>following this link</em></a>
-				<h2 id="Su3">Network analysis for Marketing Purposes</h2>
-					<p>
+			<h2 id="Su3">Network analysis for Marketing Purposes</h2>
+				<p>
 					Nowadays social media such as Twitter have become a reality not only in the news media but also in 
 					the marketing business. Lots of companies use those means to promote events, their products and their 
 					services. They nurture their branding and reputation using their social media accounts as a prevailing platform
 					of communication.
-					</p>
-					<p>
+				</p>
+				<p>
 					But sometimes, those can be turnt around and serve as a public floor for customers facing operating 
 					issues with some companies to express their disagreement and sometimes huge disappointment.
 					This project's goal was thus to study the spread of this kind of information throughout twitter's network, 
 					to understand how it becomes viral news	and how this could affect a company's image and even its internal policies. 
-					</p>
-				<h2 id="Su4">Risk Management</h2>
-				<h2 id="Su5">Banking & Scoring</h2>					
-					<h3>Banking</h3>
-					<h3>Credit Scoring</h3>
-				<h2 id="Su6">Brent Pricing</h2>
-			</article>
+				</p>
+			<h2 id="Su4">Risk Management</h2>
+			<h2 id="Su5">Banking & Scoring</h2>					
+				<h3>Banking</h3>
+				<h3>Credit Scoring</h3>
+			<h2 id="Su6">Brent Pricing</h2>
+		</section>
 			<h1>Data Visualisation</h1>
-			<article id="S7">
+		<section id="S7">
 				This project involved the combination and cross-checking of multiple databases regarding different official data sources.
 				Its goal was to study the evolution of the food-consumption in France as well as daily habits (sports, fast food-consumption)
 				on the obesity rate and its geographical discrepencies.
 				The result of the project is online at the following link: <a href="https://frenchmalbouffetour.github.io">https://frenchmalbouffetour.github.io</a>
-			</article>
-			
-			<h1>Beyond...</h1>
-			<article id="S3">
-				<h2 id="Su8">Photography</h2>
-				<h2 id="Su9">Paintings</h2>
-			</article>
 		</section>
-		<footer>
-		</footer>
+			
+		<h1>Beyond...</h1>
+		<section id="S3">
+			<h2 id="Su8">Photography</h2>
+			<h2 id="Su9">Paintings</h2>
+		</section>
+		</div>
 	</body>
 </html>
